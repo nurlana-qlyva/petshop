@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>petshop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./libs/components-bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+    </head>
+    <body>
+        <header class="petshop-all petshop-header">
+            <div class="container">
+                <div class="row align-items-center header-all">
+                    <div class="col-8 col-lg-3">
+                        <a href="index.html" class="text-decoration-none" title="Beige petshop">
+                            <img src="./img/LOGO-header.png" alt="petshop">
+                            <img src="./img/Beige Petshop.png" alt="petshop">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <nav class="nav-header blue-color">
+                            <ul class="nav text-capitalize flex-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active font-16 blue-color orange-color-hover" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link dropdown-toggle font-16 orange-color-hover" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop Now</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item font-16 orange-color-hover" href="product.html">Products</a>
+                                            <a class="dropdown-item font-16 orange-color-hover" href="#">Checkout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active font-16 blue-color orange-color-hover" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link dropdown-toggle font-16 orange-color-hover" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item font-16 orange-color-hover" href="service.html">Services</a>
+                                            <a class="dropdown-item font-16 orange-color-hover" href="events.html">Events</a>
+                                            <a class="dropdown-item font-16 orange-color-hover" href="coming-soon.html">Coming Soon</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-16 blue-color orange-color-hover" href="contact.html">Contact</a>
+                                </li>
+                              </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sign-header">
+                            <ul class="list-unstyled list-inline mb-0">
+                                <li class="list-inline-item cart">
+                                    <a href="product-cart.html" class="orange-color orange-bg-hover position-relative font-16 orange-border" id="cart-page">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge custom-badge orange-color">0</span></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="signup.html" class="orange-color orange-bg-hover font-16 orange-border">Sign Up <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-none menu-responsive">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="menu-icon menu-icon-js">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a href="index.html" class="text-decoration-none" title="Beige petshop">
+                        <img src="./img/LOGO-header.png" alt="petshop">
+                        <img src="./img/Beige Petshop.png" alt="petshop">
+                    </a>
+                </div>
+                <div class="side-menu">
+                    <div class="mega-menu">
+                        <p class="blue-color">Categories</p>
+                        <ul class="list-unstyled mega-menu-list">
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="active font-16 blue-color orange-color-hover" href="index.html">Home</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="#">Shop Now</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover">Pages</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                                <div class="sub-menu">
+                                    <span><a href="#">Glass</a></span>
+                                    <span><a href="#">Plates</a></span>
+                                    <span><a href="#">Bowls & serving dishes</a></span>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="contact.html">Contact</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="product-cart.html">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="signup.html">Sign Up <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="breadcrumb-header">
+                                <h1 class="blue-color">Payment</h1>
+                                <ul class="breadcrumb sign-breadcrumb p-0">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html" class="orange-color-hover blue-color"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="breadcrumb-item opacity-color">Shop Now</li>
+                                    <li class="breadcrumb-item opacity-color">Payment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="petshop-all">
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="payment-section">
+                                <h3 class="blue-color mb-0">Billings Details</h3>
+                            <form action="">
+                                <div class="payment-user-info margin-y">
+                                    <input type="text" name="fullName" id="fullName" style="font-family: FontAwesome;" placeholder="&#xf007      Name">
+                                    <input type="text" name="email" id="email" style="font-family: FontAwesome;" placeholder="&#xf0e0     Email Address">
+                                    <input type="text" name="phoneNumber" id="phoneNumber" style="font-family: FontAwesome;" placeholder="&#xf095      Phone Number">
+                                    <div class="d-flex justify-content-between display-block">
+                                        <input type="text" name="getCountry" id="getCountry" style="font-family: FontAwesome;" placeholder="&#xf1b0      Country" class="mr-1">
+                                        <input type="text" name="getCity" id="getCity" style="font-family: FontAwesome;" placeholder="&#xf2bc      City">
+                                    </div>
+                                    <input type="text" name="getAddress" id="getAddress" style="font-family: FontAwesome;" placeholder="&#xf29c      Address">
+                                </div>
+                            </form>
+                            <h3 class="blue-color margin-y">Payment Method</h3>
+                            <form action="">
+                                <div class="payment-user-info">
+                                    <input type="text" name="getCard" id="getCard" style="font-family: FontAwesome;" placeholder="&#xf007      Card Holder">
+                                    <div class="d-flex justify-content-between display-block">
+                                        <input type="text" name="creditNumber" id="creditNumber" style="font-family: FontAwesome;" placeholder="&#xf1b0      Credit Number" class="mr-1">
+                                        <input type="text" name="getCvc" id="getCvc" style="font-family: FontAwesome;" placeholder="&#xf2bc      CVC">
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 payment-txt">
+                            <h3 class="blue-color margin-y">Cart Details</h3>
+                            <div class="d-flex justify-content-between font-14 margin-y font-weight-normal">
+                                <span class="orange-color font-16">2 Items</span>
+                                <span class="blue-color font-16">Date now: Nov, 3 2020</span>
+                            </div>
+                            <div class="cart-table-pay border-0">
+                                <table class="table table-responsive payment-table">
+                                    <tbody>
+                                        <tr class="font-14">
+                                            <th scope="row">
+                                                <div class="product-cart-img pay-product-img mx-0">
+                                                    <img src="./img/product-1.jpg" alt="product">
+                                                </div>
+                                            </th>
+                                            <td class="padding-table">
+                                                <p class="blue-color font-weight-bold">Pet Bag</p>
+                                                <p>Dog products</p>
+                                                <a href="#" class="orange-color">See More</a>
+                                            </td>
+                                            <td class="padding-table"><p>1.5 Kg</p></td>
+                                            <td class="padding-table quantity-product">
+                                                <form action="">
+                                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                                </form>
+                                            </td>
+                                            <td class="padding-table d-flex justify-content-between">
+                                                <span>$3.48</span>
+                                                <span class="ml-2">
+                                                    <a href="#" class="orange-color"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="font-14">
+                                            <th scope="row">
+                                                <div class="product-cart-img pay-product-img mx-0">
+                                                    <img src="./img/product-1.jpg" alt="product">
+                                                </div>
+                                            </th>
+                                            <td class="padding-table">
+                                                <p class="blue-color font-weight-bold">Pet Bag</p>
+                                                <p>Dog products</p>
+                                                <a href="#" class="orange-color">See More</a>
+                                            </td>
+                                            <td class="padding-table"><p>1.5 Kg</p></td>
+                                            <td class="padding-table quantity-product">
+                                                <form action="">
+                                                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                                                </form>
+                                            </td>
+                                            <td class="padding-table d-flex justify-content-between">
+                                                <span>$3.48</span>
+                                                <span class="ml-2">
+                                                    <a href="#" class="orange-color"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-right mt-2 padding-table border-top">
+                        <div class="col-12">
+                            <ul class="list-unstyled list-inline total-price blue-color">
+                                <li class="list-inline-item font-16">Total products</li>
+                                <li class="list-inline-item font-16">$249.96</li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <ul class="list-unstyled list-inline total-price blue-color">
+                                <li class="list-inline-item font-16">Estimated shipping costs</li>
+                                <li class="list-inline-item font-16">$2.00</li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <ul class="list-unstyled list-inline total-price blue-color">
+                                <li class="list-inline-item font-16">Total</li>
+                                <li class="list-inline-item font-16">$251.96</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between margin-y-sml">
+                        <div class="shop-now-btn our-pet-btn">
+                            <a href="#" class="orange-color text-decoration-none orange-border">Back to Cart</a>
+                        </div>
+                        <div class="shop-now-btn">
+                            <a href="#" class="text-white orange-bg text-decoration-none orange-border">Pay Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="petshop-footer">
+            <div class="petshop-footer-1 blue-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <p class="h5">Your Own Pets Factory</p>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="margin-y">
+                                <a href="index.html">
+                                    <img src="./img/LOGO.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="social-icon-footer">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="icon-footer-fb font-20"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="icon-footer-tw font-20"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="icon-footer-gmail font-20"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <p class="h5 orange-color">About Us</p>
+                            <ul class="list-unstyled orange-color-hover">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Shop Products</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Events</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2">
+                            <p class="h5 orange-color">Collections</p>
+                            <ul class="list-unstyled orange-color-hover">
+                                <li><a href="#">Dogs</a></li>
+                                <li><a href="#">Cats</a></li>
+                                <li><a href="#">Birds</a></li>
+                                <li><a href="#">Rabbits</a></li>
+                                <li><a href="#">Fishes</a></li>
+                                <li><a href="#">Small Pets</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-0">
+                            <p class="h5 orange-color">Contact Information</p>
+                            <address>
+                                Street Panyanggar, Miles, USA
+                            </address>
+                            <ul class="list-unstyled orange-color-hover">
+                                <li>
+                                    <a href="tel:0878-1263-9283">
+                                        <i class="fa fa-phone orange-color" aria-hidden="true"></i>
+                                        <span>0878-1263-9283</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@domain.com">
+                                        <i class="fa fa-envelope orange-color" aria-hidden="true"></i>
+                                        <span>info@domain.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="petshop-footer-2">
+                <div class="container">
+                    <div class="text-center">
+                        <span class="orange-color font-12">2021 Quluyeva Nurlana - All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="./libs/components-bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

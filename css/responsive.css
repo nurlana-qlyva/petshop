@@ -1,0 +1,278 @@
+@media screen and (max-width:1200px){
+    /* header */
+    .header-all{
+        display: none;
+    }
+    .menu-responsive{
+        display: block !important;
+    }
+    /* footer */
+    .petshop-footer-1{
+        padding: 70px 0;
+    }
+    /* signup */
+    .sign-padding {
+        padding: 90px 0;
+    }
+    /* home */
+    .price-list ul {
+        padding-left: 14px;
+    }
+    .payment-card{
+        max-width: 120px;
+    }
+}
+@media screen and (max-width:992px){
+    /* header */
+    .header-all {
+        padding: 14px 0;
+    }
+    .banner-header{
+        padding: 30px 0;
+    }
+    /* signup */
+    .banner-sign, .adopt-pet, .back-clr, .text-img{
+        display: none;
+    }
+    .sign-padding {
+        padding: 80px 0;
+    }
+    /* home section-1 */
+    .section-padding {
+        padding: 70px 0;
+    }
+    .margin-top{
+        margin-top: 20px;
+    }
+    .pet-img{
+        padding: 0;
+    }
+    .our-pet span, .text-bottom-space {
+        margin-bottom: 0;
+    }
+    .our-pet p, .text-space {
+        margin: 24px 0;
+    }
+    .shop-now-btn a {
+        padding: 10px 10px;
+    }
+    .subtract-img{
+        width: 226px;
+        padding: 30px;
+    }
+    .payment-card {
+        max-width: 96px;
+        height: 76px;
+    }
+    .open-hours {
+        margin-top: 16px;
+    }
+    .payment-txt h3, .payment-section h3{
+        margin-top: 20px;
+    }
+    .not-found {
+        padding: 86px 0 !important;
+    }
+    .piechart {
+        margin: 0px 10px;
+        font-size: 24px;
+    }
+    .piechart canvas{
+        width: 160px !important;
+        height: 160px !important;
+    }
+    .piechart{
+        width: 168px !important;
+        line-height: 164px !important;
+        height: 160px !important;
+    }
+}
+@media screen and (max-width:768px){
+    /* all */
+    .section-padding {
+        padding: 60px 0;
+    }
+    .margin-y {
+        margin: 20px 0;
+    }
+    /* header */
+    .breadcrumb-header h1, .our-pet h1{
+        font-size: 30px;
+    }
+    /* footer */
+    .petshop-footer-1 {
+        padding: 54px 0;
+    }
+    .petshop-footer li {
+        font-size: 12px;
+    }
+    /* home */
+    .text-space {
+        margin: 40px 0;
+    }
+    .font-18{
+        font-size: 16px;
+    }
+    .margin-btm-sml {
+        margin-bottom: 10px;
+    }
+    .list-info li, .open-hours ul li{
+        padding: 12px 0 !important;
+    }
+    .sort-by-feature{
+        text-align: left;
+        margin-top: 14px;
+    }
+    .payment-txt h3, .payment-section h3{
+        margin-top: 0;
+    }
+    .cart-table-pay table{
+        display: block !important;
+    }
+    .payment-flex:not(:last-child) {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:576px){
+    /* footer */
+    .petshop-footer-2 {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    /* signup */
+    .sign-form{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 40px 0;
+    }
+    .sign-padding {
+        padding: 50px 0;
+    }
+    .petshop-all h3 {
+        font-size: 30px !important;
+    }
+    .sign-form h3 {
+        margin-bottom: 20px;
+    }
+    .font-16, .petshop-all p, .sign-btn, .sign-form input, .sign-breadcrumb li, .main-password, .our-pet, .font-18, .shop-now-btn a, .service-section, .vaccine-pet-info, ::placeholder{
+        font-size: 14px;
+    }
+    .sign-btn, .main-password{
+        margin-top: 10px;
+    }
+    .sign-form input {
+        padding: 10px 76px;
+        margin: 8px auto;
+    }
+    .social-icon-fb{
+        padding: 12px 24px;
+        font-size: 26px;
+    }
+    .social-icon-google {
+        padding: 14px 22px;
+        font-size: 26px;
+    }
+    /* home */
+    .section-padding {
+        padding: 40px 0;
+    }
+    .vertical-space {
+        margin: 6px 0;
+    }
+    .margin-btm {
+        margin-bottom: 30px;
+    }
+    .payment-card {
+        max-width: 70px;
+        height: 46px;
+    }
+    .service-box, .service-box p {
+        padding-top: 20px;
+    }
+    .our-service {
+        margin: 10px 0;
+    }
+    .payment-user-input input, .contact-info input{
+        padding: 8px 0 8px 10px;
+        margin-bottom: 6px;
+    }
+    .not-found {
+        padding: 64px 0 !important;
+    }
+    .display-block{
+        display: block !important;
+    }
+    .section-none{
+        display: none;
+    }
+}
+@media screen and (max-width:472px){
+    /* footer */
+    .petshop-footer-1 p{
+        font-size: 14px;
+    }
+    /* signup */
+    .sign-form {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sign-form input {
+        padding: 10px 40px;
+        margin: 6px auto;
+    }
+    .sign-padding {
+        padding: 40px 0;
+    }
+    .petshop-all p, .sign-btn, .sign-form input, .password-form p, .sign-breadcrumb li, .petshop-footer-1 address, .petshop-footer-1 div, .main-password, .font-18, .price-list li, .shop-now-btn a, .service-section, .vaccine-pet-info{
+        font-size: 12px;
+    }
+    .petshop-all h3, .breadcrumb-header h1, .our-pet h1 {
+        font-size: 24px !important;
+    }
+    .social-icon-fb {
+        padding: 8px 20px;
+        font-size: 24px;
+    }
+    .social-icon-google {
+        padding: 9px 17px;
+        font-size: 24px;
+    }
+    /* home */
+    .section-padding {
+        padding: 20px 0;
+    }
+    .text-space {
+        margin: 30px 0;
+    }
+    .our-service{
+        min-height: 160px !important;
+    }
+    .margin-btm {
+        margin-bottom: 20px;
+    }
+    .subtract-img {
+        width: 140px;
+        padding: 12px;
+    }
+    .payment-card {
+        max-width: 42px;
+    }
+    .service-box, .service-box p {
+        padding-top: 18px;
+    }
+    .our-service {
+        margin: 7px 0;
+    }
+    .payment-flex{
+        flex-direction: column
+    }
+    .payment-flex:not(:last-child) {
+        margin-top: 20px;
+    }
+    .success-form{
+        padding: 30px 0
+    }
+    .menu-responsive {
+        padding: 10px 15px;
+    }
+}

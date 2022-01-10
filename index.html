@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>petshop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./libs/components-bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./libs/jquery/assets/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="./libs/jquery/assets/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+    </head>
+    <body>
+        <header class="petshop-all petshop-header">
+            <div class="container">
+                <div class="row align-items-center header-all">
+                    <div class="col-8 col-lg-3">
+                        <a href="index.html" class="text-decoration-none" title="Beige petshop">
+                            <img src="./img/LOGO-header.png" alt="petshop">
+                            <img src="./img/Beige Petshop.png" alt="petshop">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <nav class="nav-header blue-color">
+                            <ul class="nav text-capitalize flex-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active font-16 blue-color orange-color-hover" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link dropdown-toggle font-16 orange-color-hover" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop Now</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item font-16 orange-color-hover" href="product.html">Products</a>
+                                            <a class="dropdown-item font-16 orange-color-hover" href="#">Checkout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active font-16 blue-color orange-color-hover" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="nav-link dropdown-toggle font-16 orange-color-hover" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item font-16 orange-color-hover" href="service.html">Services</a>
+                                            <a class="dropdown-item font-16 orange-color-hover" href="events.html">Events</a>
+                                            <a class="dropdown-item font-16 orange-color-hover" href="coming-soon.html">Coming Soon</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-16 blue-color orange-color-hover" href="contact.html">Contact</a>
+                                </li>
+                              </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sign-header">
+                            <ul class="list-unstyled list-inline mb-0">
+                                <li class="list-inline-item cart">
+                                    <a href="product-cart.html" class="orange-color orange-bg-hover position-relative font-16 orange-border" id="cart-page">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge custom-badge orange-color">0</span></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="signup.html" class="orange-color orange-bg-hover font-16 orange-border">Sign Up <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-none menu-responsive">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="menu-icon menu-icon-js">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <a href="index.html" class="text-decoration-none" title="Beige petshop">
+                        <img src="./img/LOGO-header.png" alt="petshop">
+                        <img src="./img/Beige Petshop.png" alt="petshop">
+                    </a>
+                </div>
+                <div class="side-menu">
+                    <div class="mega-menu">
+                        <p class="blue-color">Categories</p>
+                        <ul class="list-unstyled mega-menu-list">
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="active font-16 blue-color orange-color-hover" href="index.html">Home</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="#">Shop Now</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover">Pages</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                                <div class="sub-menu">
+                                    <span><a href="#">Glass</a></span>
+                                    <span><a href="#">Plates</a></span>
+                                    <span><a href="#">Bowls & serving dishes</a></span>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="contact.html">Contact</a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="product-cart.html">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="font-16 blue-color orange-color-hover" href="signup.html">Sign Up <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                    <button type="button" class="show-submenu">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="petshop-all">
+            <!-- section 1 -->
+            <!-- Pet Care -->
+            <section class="beige-bg section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="blue-color our-pet">
+                                <span class="d-inline-block orange-color font-20">Pet Care</span>
+                                <h1>We’re all in this together, Including our pets</h1>
+                                <div class="dark-grey-color margin-y">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo</div>
+                                <div class="shop-now-btn our-pet-btn">
+                                    <a href="#" class="text-white orange-bg text-decoration-none orange-border">Shop Now <i class="fa fa-usd" aria-hidden="true"></i></a>
+                                    <a href="#" class="orange-color text-decoration-none orange-border">Our Pets <i class="fa fa-arrow-right orange-border" aria-hidden="true"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="img-size margin-top">
+                                <img src="./img/section-1.jpg" alt="pet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 2 -->
+            <!-- Becky Pets -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-6">
+                            <div class="blue-color our-pet">
+                                <h3 class="text-bottom-space">Welcome to Becky Pets</h3>
+                                <p class="font-18 margin-y-sml">Reliable, guaranteed, and affordable pet adoption</p>
+                                <div class="text-space dark-grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.  consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</div>
+                                <div class="shop-now-btn">
+                                    <a href="#" class="text-white orange-bg text-decoration-none orange-border">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="pet-image-border img-size margin-top">
+                                <img src="./img/section-2.jpg" alt="pet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 3 -->
+            <!-- Our Best Services -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="blue-color our-pet">
+                                <h3 class="text-bottom-space">Our Best Services</h3>
+                                <p class="font-18 margin-y-sml">Providing services according to consumer needs</p>
+                                <div class="text-space dark-grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum</div>
+                                <div class="shop-now-btn">
+                                    <a href="#" class="text-white orange-bg text-decoration-none orange-border">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 service-section-box margin-top">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 text-center vertical-space">
+                                    <a href="#">
+                                        <div class="our-service">
+                                            <div class="service-box vertical-space">
+                                                <img src="./img/service-icon-1.svg" alt="pet-icon">
+                                            </div>
+                                            <p class="mb-0 orange-color-hover">Pets Grooming</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 text-center vertical-space">
+                                    <a href="#">
+                                        <div class="our-service">
+                                            <div class="service-box vertical-space">
+                                                <img src="./img/service-icon-2.svg" alt="pet-icon">
+                                            </div>
+                                            <p class="mb-0 orange-color-hover">Pet Hotel</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 text-center vertical-space">
+                                    <a href="#">
+                                        <div class="our-service">
+                                            <div class="service-box vertical-space">
+                                                <img src="./img/service-icon-3.svg" alt="pet-icon">
+                                            </div>
+                                            <p class="mb-0 orange-color-hover">Pet Diagnostics</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 text-center vertical-space">
+                                    <a href="#">
+                                        <div class="our-service">
+                                            <div class="service-box vertical-space">
+                                                <img src="./img/service-icon-4.svg" alt="pet-icon">
+                                            </div>
+                                            <p class="mb-0 orange-color-hover">Pet Care</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 text-center vertical-space">
+                                    <a href="#">
+                                        <div class="our-service">
+                                            <div class="service-box vertical-space">
+                                                <img src="./img/service-icon-5.svg" alt="pet-icon">
+                                            </div>
+                                            <p class="mb-0 orange-color-hover">Vaccination</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 text-center vertical-space">
+                                    <a href="#">
+                                        <div class="our-service">
+                                            <div class="service-box vertical-space">
+                                                <img src="./img/service-icon-6.svg" alt="pet-icon">
+                                            </div>
+                                            <p class="mb-0 orange-color-hover">Pet Adopting</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 4 -->
+            <!-- Happy Adopting -->
+            <section class="main-section-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="adopt-pet img-size">
+                                <img src="./img/section-4-1.jpg" alt="pet-adopt">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="blue-color text-center happy-adopting our-pet">
+                                <h3>Happy Adopting Pets Stories</h3>
+                                <div class="font-18 text-space">Do you believe in a future where every healthy pet finds a forever home? We do.</div>
+                                <div class="shop-now-btn">
+                                    <a href="#" class="text-white orange-bg text-decoration-none orange-border">Adoption Your Pets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="adopt-pet img-size">
+                                <img src="./img/section-4-2.jpg" alt="pet-adopt">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 5 -->
+            <!-- Pricing Plans -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-9 mx-auto text-center margin-btm our-pet">
+                            <p class="orange-color text-bottom-space">Pricing Plans</p>
+                            <h3 class="blue-color">Price For Our Services</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-4 col-12 text-bottom-space">
+                            <div class="card text-center price-service">
+                                <div class="price-header text-left d-flex align-items-center">
+                                    <img src="./img/price-1.svg" alt="price">
+                                </div>
+                                <div class="blue-color margin-y">
+                                    <h6>Initial Inspection</h6>
+                                </div>
+                                <div class="card-body price-list pt-0">
+                                    <ul class="list-unstyled text-left dark-grey-color">
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Consectetur adipiscing elit</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Adipiscing elit ut aliquam</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Lorem ipsum elit ut aliquam</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Adipiscing elit ut aliquam</li>
+                                        <li><i class="fa fa-times-circle-o" aria-hidden="true"></i> Sit amet, consectetur</li>
+                                        <li><i class="fa fa-times-circle-o" aria-hidden="true"></i> Lorem ipsum adipiscing elit </li> 
+                                    </ul>
+                                    <div class="shop-now-btn margin-y">
+                                        <a href="#" class="orange-bg text-white orange-border">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12 text-bottom-space">
+                            <div class="card text-center price-service">
+                                <div class="price-header d-flex justify-content-between align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="./img/price-2.svg" alt="price">
+                                    </div>
+                                    <div class="d-inline-block text-white">
+                                        <p class="h4 mb-0">Price</p>
+                                        <p class="mb-0">$30</p>
+                                    </div>
+                                </div>
+                                <div class="margin-y blue-color">
+                                    <h6>Full Inspection</h6>
+                                </div>
+                                <div class="card-body price-list pt-0">
+                                    <ul class="list-unstyled text-left dark-grey-color">
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Consectetur adipiscing elit</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Adipiscing elit ut aliquam</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Lorem ipsum elit ut aliquam</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Adipiscing elit ut aliquam</li>
+                                        <li><i class="fa fa-times-circle-o" aria-hidden="true"></i> Sit amet, consectetur</li>
+                                        <li><i class="fa fa-times-circle-o" aria-hidden="true"></i> Lorem ipsum adipiscing elit </li> 
+                                    </ul>
+                                    <div class="shop-now-btn margin-y">
+                                        <a href="#" class="orange-bg text-white orange-border">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12">
+                            <div class="card text-center price-service">
+                                <div class="price-header d-flex justify-content-between align-items-center">
+                                    <div class="d-inline-block">
+                                        <img src="./img/service-icon-5.svg" alt="price">
+                                    </div>
+                                    <div class="d-inline-block text-white">
+                                        <p class="h4 mb-0">Price</p>
+                                        <p class="mb-0">$15</p>
+                                    </div>
+                                </div>
+                                <div class="margin-y blue-color">
+                                    <h6>Vaccination</h6>
+                                </div>
+                                <div class="card-body price-list pt-0">
+                                    <ul class="list-unstyled text-left dark-grey-color">
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Consectetur adipiscing elit</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Adipiscing elit ut aliquam</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Lorem ipsum elit ut aliquam</li>
+                                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i> Adipiscing elit ut aliquam</li>
+                                        <li><i class="fa fa-times-circle-o" aria-hidden="true"></i> Sit amet, consectetur</li>
+                                        <li><i class="fa fa-times-circle-o" aria-hidden="true"></i> Lorem ipsum adipiscing elit </li> 
+                                    </ul>
+                                    <div class="shop-now-btn margin-y">
+                                        <a href="#" class="orange-bg text-white orange-border">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 6 -->
+            <!-- Wide Variaety -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-5">
+                            <div class="img-size">
+                                <img src="./img/section-6.jpg" alt="pet">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="blue-color margin-top our-pet">
+                                <h3>Wide Variety of Choices for
+                                    The Needs of Your Pets</h3>
+                                <div class="text-space dark-grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum</div>
+                                <div class="shop-now-btn">
+                                    <a href="#" class="text-white orange-bg text-decoration-none orange-border">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 7 -->
+            <!-- Carusel -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="product-discount">
+                                <a href="#">
+                                    <div class="img-size discount-img position-relative">
+                                        <img src="./img/product-5.jpg" alt="product">
+                                        <div class="position-absolute discount-price d-flex justify-content-between align-items-center">
+                                            <div class="text-white">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="h4">Get 20%</li>
+                                                    <li class="mb-0">DISCOUNT</li>
+                                                </ul>
+                                            </div>
+                                            <div class="text-white text-right shop-bag">
+                                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="popular-products">
+                                <h3 class="blue-color">Most Popular Dog & Cat Product</h3>
+                                <p class="dark-grey-color">Present luctus orci mauris, quis tempus dui tempor id</p>
+                            </div>
+                            <div class="owl-carousel owl-theme product-info">
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-img img-size">
+                                            <img src="./img/product-1.jpg" alt="product">
+                                        </div>
+                                        <div class="overlay-text">
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-reply" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-txt">
+                                            <div class="dark-grey-color">
+                                                <div>Pet Bag</div>
+                                                <div>$3.48</div>
+                                            </div>
+                                            <div class="product-star">
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-img img-size">
+                                            <img src="./img/product-2.jpg" alt="product">
+                                        </div>
+                                        <div class="overlay-text">
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-reply" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-txt">
+                                            <div class="dark-grey-color">
+                                                <div>Pet House</div>
+                                                <div>$3.48</div>
+                                            </div>
+                                            <div class="product-star">
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-img img-size">
+                                            <img src="./img/product-4.jpg" alt="product">
+                                        </div>
+                                        <div class="overlay-text">
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-reply" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-txt">
+                                            <div class="dark-grey-color">
+                                                <div>Pet Medicine</div>
+                                                <div>$3.48</div>
+                                            </div>
+                                            <div class="product-star">
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-img img-size">
+                                            <img src="./img/product-6.jpg" alt="product">
+                                        </div>
+                                        <div class="overlay-text">
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-reply" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-txt">
+                                            <div class="dark-grey-color">
+                                                <div>Pet Necklace</div>
+                                                <div>$3.48</div>
+                                            </div>
+                                            <div class="product-star">
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-item">
+                                    <a href="#">
+                                        <div class="product-img img-size">
+                                            <img src="./img/product-7.jpg" alt="product">
+                                        </div>
+                                        <div class="overlay-text">
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-reply" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-txt">
+                                            <div class="dark-grey-color">
+                                                <div>Rubber Ball</div>
+                                                <div>$3.48</div>
+                                            </div>
+                                            <div class="product-star">
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star yellow-color" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star grey-color-star" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 8 -->
+            <!-- Gallery -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9 mx-auto text-center margin-btm">
+                            <p class="orange-color font-18 text-bottom-space">Gallery</p>
+                            <h3 class="blue-color">Our Gallery</h3>
+                        </div>
+                    </div>
+                    <div class="feature-tabs-wrap">
+                        <ul class="nav nav-tabs border-bottom-0 feature-tabs feature-tabs-center d-flex justify-content-center" data-tabs="tabs">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-tab text-center" href="#feature-tab-1" data-toggle="tab">
+                                    <span class="ti-announcement icon-sm"></span>
+                                    <h6 class="mb-0">Dogs</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-tab text-center" href="#feature-tab-2" data-toggle="tab">
+                                    <span class="ti-light-bulb icon-sm"></span>
+                                    <h6 class="mb-0">Cats</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-tab text-center active" href="#feature-tab-3" data-toggle="tab">
+                                    <span class="ti-email icon-sm"></span>
+                                    <h6 class="mb-0">Birds</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-tab text-center" href="#feature-tab-4" data-toggle="tab">
+                                    <span class="ti-shield icon-sm"></span>
+                                    <h6 class="mb-0">Rabbits</h6>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-tab text-center" href="#feature-tab-5" data-toggle="tab">
+                                    <span class="ti-vector icon-sm"></span>
+                                    <h6 class="mb-0">Fishes</h6>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content feature-tab-content">
+                            <div class="tab-pane" id="feature-tab-1">
+                                <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/dog-0.jpg" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-1.jpg" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-2.jpg" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-3.jpg" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-4.jpg" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-5.png" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-6.jpg" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="position-relative">
+                                            <a href="#">
+                                                <div class="img-size dog-image">
+                                                    <img src="./img/dog-7.jfif" alt="dog">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Dogs</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="feature-tab-2">
+                                <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-1.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-2.jfif" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-3.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-4.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-5.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-6.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-7.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/cat-8.jpg" alt="cat">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Cats</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active" id="feature-tab-3">
+                                <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-1.jpg" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-2.jpg" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-3.jpg" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-4.jpg" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-5.jfif" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-6.jfif" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-7.jpg" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/bird-8.jpg" alt="bird">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Birds</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="feature-tab-4">
+                                <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-1.jfif" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-2.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-3.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-4.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-5.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-6.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-7.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/rabbit-8.jpg" alt="rabbit">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Rabbits</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="feature-tab-5">
+                                <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-1.jpg" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-2.jpg" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-3.jfif" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-4.jfif" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-5.jpg" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-6.jpg" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-7.jpg" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 popular-pets">
+                                        <div class="dog-image position-relative">
+                                            <a href="#">
+                                                <div class="img-size">
+                                                    <img src="./img/fish-8.jpg" alt="fish">
+                                                </div>
+                                                <div class="overlay-text-pet">
+                                                    <p class="h6">Happy Fishes</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 9 -->
+            <!-- Feature Events -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row margin-btm">
+                        <div class="col-12 col-md-9 mx-auto text-center">
+                            <h3 class="blue-color">Our Feature Events</h3>
+                            <p class="h6 dark-grey-color">Take part in pur events & make the world a better place</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-6">
+                            <div class="img-size pet-img">
+                                <img src="./img/cat.jpg" alt="pet" class="rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="blue-color">
+                                <div class="h6 margin-btm-sml">April Month</div>
+                                <div class="d-flex justify-content-between margin-btm-sml">
+                                    <div class="subtract-img d-flex justify-content-between align-items-center">
+                                        <div class="h3 text-white mb-0">27</div>
+                                        <div class="font-12 text-white mb-0">10 am - 14 pm</div>
+                                    </div>
+                                    <div class="blue-color align-self-center">
+                                        <p class="h6">Volunteer as Pet Foster Carer</p>
+                                        <span class="font-12 opacity-color"><i class="fa fa-map-marker" aria-hidden="true"></i> Central Park New York</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between margin-btm-sml">
+                                    <div class="subtract-img d-flex justify-content-between align-items-center">
+                                        <div class="h3 text-white mb-0">27</div>
+                                        <div class="font-12 text-white mb-0">10 am - 14 pm</div>
+                                    </div>
+                                    <div class="blue-color align-self-center">
+                                        <p class="h6">Volunteer as Pet Foster Carer</p>
+                                        <span class="font-12"><i class="fa fa-map-marker" aria-hidden="true"></i> Central Park New York</span>
+                                    </div>
+                                </div>
+                                <div class="h6 margin-btm-sml">May Month</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="subtract-img d-flex justify-content-between align-items-center">
+                                        <div class="h3 text-white mb-0">27</div>
+                                        <div class="font-12 text-white mb-0">10 am - 14 pm</div>
+                                    </div>
+                                    <div class="blue-color align-self-center">
+                                        <p class="h6">Volunteer as Pet Foster Carer</p>
+                                        <span class="font-12"><i class="fa fa-map-marker" aria-hidden="true"></i> Central Park New York</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-now-btn margin-y">
+                                <a href="#" class="text-white orange-bg text-decoration-none orange-border">More Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 10 -->
+            <!-- Payment Methods -->
+            <section class="main-section-10 section-padding">
+                <div class="container">
+                    <div class="blue-color">
+                        <h3>We Accept Payment Methods</h3>
+                        <p class="h6 dark-grey-color">Are you ready?</p>
+                    </div>
+                    <div class="row justify-content-between align-items-center payment-card-block">
+                        <div class="col-12 col-md-3">
+                            <div class="shop-now-btn margin-y">
+                                <a href="#" class="text-white orange-bg text-decoration-none orange-border">Start Shopping</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="payment-card img-size">
+                                <a href="#">
+                                    <img src="./img/pay-1.png" alt="payment">
+                                </a>
+                            </div>
+                            <div class="payment-card img-size">
+                                <a href="#">
+                                    <img src="./img/pay-2.png" alt="payment">
+                                </a>
+                            </div>
+                            <div class="payment-card img-size">
+                                <a href="#">
+                                    <img src="./img/pay-3.png" alt="payment">
+                                </a>
+                            </div>
+                            <div class="payment-card img-size">
+                                <a href="#">
+                                    <img src="./img/pay-4.png" alt="payment">
+                                </a>
+                            </div>
+                            <div class="payment-card img-size">
+                                <a href="#">
+                                    <img src="./img/pay-5.png" alt="payment">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="petshop-footer">
+            <div class="petshop-footer-1 blue-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <p class="h5">Your Own Pets Factory</p>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="margin-y">
+                                <a href="index.html">
+                                    <img src="./img/LOGO.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="social-icon-footer">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="icon-footer-fb font-20"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="icon-footer-tw font-20"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="icon-footer-gmail font-20"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3">
+                            <p class="h5 orange-color">About Us</p>
+                            <ul class="list-unstyled orange-color-hover">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Shop Products</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Events</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2">
+                            <p class="h5 orange-color">Collections</p>
+                            <ul class="list-unstyled orange-color-hover">
+                                <li><a href="#">Dogs</a></li>
+                                <li><a href="#">Cats</a></li>
+                                <li><a href="#">Birds</a></li>
+                                <li><a href="#">Rabbits</a></li>
+                                <li><a href="#">Fishes</a></li>
+                                <li><a href="#">Small Pets</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-0">
+                            <p class="h5 orange-color">Contact Information</p>
+                            <address>
+                                Street Panyanggar, Miles, USA
+                            </address>
+                            <ul class="list-unstyled orange-color-hover">
+                                <li>
+                                    <a href="tel:0878-1263-9283">
+                                        <i class="fa fa-phone orange-color" aria-hidden="true"></i>
+                                        <span>0878-1263-9283</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@domain.com">
+                                        <i class="fa fa-envelope orange-color" aria-hidden="true"></i>
+                                        <span>info@domain.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="petshop-footer-2">
+                <div class="container">
+                    <div class="text-center">
+                        <span class="orange-color font-12">2021 Quluyeva Nurlana - All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="./libs/components-bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="./libs/jquery/assets/owl-carousel/owl.carousel.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
